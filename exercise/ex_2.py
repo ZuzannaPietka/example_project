@@ -1,5 +1,5 @@
 # trojkat
-
+import math
 a = 10
 b = 20
 c = 15
@@ -13,3 +13,13 @@ print("Obwod trojkata wynosi " + str(obwod) + ", zas pole wynisi " + str(pole) +
 obwod_prost = 2*a+2*b
 pole_prost = a * b
 print("Obwod prostokąta wynosi " + str(obwod_prost) + ", zas pole wynisi " + str(pole_prost) + ".")
+
+r = 10;
+
+obwod_kolo = 2*math.pi*r
+pole_kolo = math.pi*r**2
+print("Obwod koła wynosi " + str(obwod_kolo) + ", zas pole wynisi " + str(pole_kolo) + ".")
+
+
+
+
