@@ -25,5 +25,9 @@ obwod_trapez = a+b+c+d
 pole_trapez = ((a+b)*h)/2
 print("Obwod trapezu wynosi " + str(obwod_trapez) + ", zas pole wynisi " + str(pole_trapez) + ".")
 
+obwod_romb = 2*a+2*b
+pole_romb = a*h
+print("Obwod romb wynosi " + str(obwod_romb) + ", zas pole wynisi " + str(pole_romb) + ".")
+
 
 
