@@ -20,6 +20,10 @@ obwod_kolo = 2*math.pi*r
 pole_kolo = math.pi*r**2
 print("Obwod koła wynosi " + str(obwod_kolo) + ", zas pole wynisi " + str(pole_kolo) + ".")
 
+d= 10
+obwod_trapez = a+b+c+d
+pole_trapez = ((a+b)*h)/2
+print("Obwod trapezu wynosi " + str(obwod_trapez) + ", zas pole wynisi " + str(pole_trapez) + ".")
 
 
 
