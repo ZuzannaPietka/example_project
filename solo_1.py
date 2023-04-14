@@ -37,4 +37,5 @@ wynik = 3**4
 
 # oczekiwany rezultat:
 # Wynik wynosi: 81
-print("Wynik wynosi: "+wynik.__str__())
+print("Wynik wynosi: "+str(wynik))
+
