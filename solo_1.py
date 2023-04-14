@@ -27,3 +27,14 @@ studenci = ["Ania", "Kasia", "Piotr", "Tomek"]
 
 for i in studenci:
     print("hello "+i)
+
+# zadanie 1.5
+
+liczba = 3
+potega = 4
+
+wynik = 3**4
+
+# oczekiwany rezultat:
+# Wynik wynosi: 81
+print("Wynik wynosi: "+wynik.__str__())
