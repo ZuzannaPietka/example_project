@@ -63,3 +63,9 @@ studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny
 studenci.sort(key=lambda name: name.split(" ")[-1].lower())
 print(studenci)
 
+# zadanie 1.9
+
+# policz wszystkich studentow z tablicy, ktorych nazwisko zaczyna sie na N
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+liczba_n=studenci.count("N")
+print("Liczba studentow na N wynosi: "+str(liczba_n))
