@@ -69,3 +69,15 @@ print(studenci)
 studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
 liczba_n=studenci.count("N")
 print("Liczba studentow na N wynosi: "+str(liczba_n))
+
+# zadanie 1.9
+
+# policz wszystkich studentow z tablicy, ktorych nazwisko zaczyna sie na N
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+liczba_studentow = 0
+for student in studenci:
+    if student.split()[1][0] == "N":
+        liczba_studentow += 1
+
+print("Liczba studentów na N wynosi: ", liczba_studentow)
