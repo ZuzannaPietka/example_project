@@ -81,3 +81,4 @@ for student in studenci:
         liczba_studentow += 1
 
 print("Liczba studentów na N wynosi: ", liczba_studentow)
+
