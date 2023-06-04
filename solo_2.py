@@ -24,7 +24,7 @@ class Mieszkanie:
 
 
 
-mieszkanie_1 = Mieszkanie("Poznan", "Towarowa", "10", 80, 3, 250000)
+mieszkanie_1 = Mieszkanie("Poznań", "Towarowa", "10", 80, 3, 250000)
 print(mieszkanie_1)
 print(mieszkanie_1.oblicz_cene_na_metr())
 print(mieszkanie_1.czy_drogie())
