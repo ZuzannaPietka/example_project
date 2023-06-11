@@ -48,3 +48,21 @@ def silnia(n):
 liczba = 5
 wynik = silnia(liczba)
 print(wynik)  # Wyświetli 120
+
+# Funkcja fib(n) zwraca n-ty element ciągu Fibonacciego.
+# Dla n = 0, zwraca 0.
+# Dla n = 1 lub n = 2, zwraca 1.
+# W przeciwnym przypadku, rekurencyjnie oblicza n-ty element poprzez sumowanie dwóch poprzednich elementów.
+
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+# Przykład użycia:
+liczba = 6
+wynik = fib(liczba)
+print(wynik)  # Wyświetli 8
