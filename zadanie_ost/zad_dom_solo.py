@@ -72,7 +72,7 @@ wynik = fib(liczba)
 print(wynik)  # Wyświetli 8
 
 #5
-# rozwiązanie sudoku 4x4
+# rozwiązanie sudoku o wymiarach 4x4
 def print_board(board):
     for i in range(4):
         if i % 2 == 0 and i != 0:
