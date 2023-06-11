@@ -1,3 +1,4 @@
+#1
 # Funkcja suma_listy(l) zwraca sumę wszystkich elementów w liście l.
 # Jeśli lista jest pusta, zwraca 0.
 # W przeciwnym przypadku, dodaje pierwszy element listy do sumy reszty listy.
