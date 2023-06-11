@@ -66,3 +66,82 @@ def fib(n):
 liczba = 6
 wynik = fib(liczba)
 print(wynik)  # Wyświetli 8
+
+# rowiązanie sudoku 4x4
+def print_board(board):
+    for i in range(4):
+        if i % 2 == 0 and i != 0:
+            print("- - - - - - - - -")
+        for j in range(4):
+            if j % 2 == 0 and j != 0:
+                print("|", end=" ")
+            print(board[i][j], end=" ")
+        print()
+
+
+def find_empty(board):
+    for i in range(4):
+        for j in range(4):
+            if board[i][j] == 0:
+                return i, j
+    return None
+
+
+def is_valid(board, num, row, col):
+    # Sprawdź wiersz
+    for i in range(4):
+        if board[row][i] == num:
+            return False
+
+    # Sprawdź kolumnę
+    for i in range(4):
+        if board[i][col] == num:
+            return False
+
+    # Sprawdź podkwadrat 2x2
+    start_row = (row // 2) * 2
+    start_col = (col // 2) * 2
+    for i in range(start_row, start_row + 2):
+        for j in range(start_col, start_col + 2):
+            if board[i][j] == num:
+                return False
+
+    return True
+
+
+def solve_sudoku(board):
+    find = find_empty(board)
+    if not find:
+        return True
+    else:
+        row, col = find
+
+    for num in range(1, 5):
+        if is_valid(board, num, row, col):
+            board[row][col] = num
+
+            if solve_sudoku(board):
+                return True
+
+            board[row][col] = 0
+
+    return False
+
+
+# Przykładowa plansza Sudoku 4x4 (0 oznacza puste pole)
+board = [
+    [0, 2, 0, 0],
+    [0, 0, 3, 0],
+    [7, 0, 0, 0],
+    [0, 0, 0, 0]
+]
+
+print("Przed rozwiązaniem:")
+print_board(board)
+print("\nPo rozwiązaniu:")
+if solve_sudoku(board):
+    print_board(board)
+else:
+    print("Nie znaleziono rozwiązania.")
+
+
