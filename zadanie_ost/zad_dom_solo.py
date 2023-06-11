@@ -34,3 +34,19 @@ def znajdz_najwiekszy_element_listy(l):
 lista = [3, 7, 2, 9, 4]
 wynik = znajdz_najwiekszy_element_listy(lista)
 print(wynik)  # Wyświetli 9
+
+# Funkcja silnia(n) zwraca silnię liczby n.
+# Dla n = 0 lub n = 1, zwraca 1.
+# W przeciwnym przypadku, rekurencyjnie oblicza silnię poprzez mnożenie n przez silnię (n-1).
+
+def silnia(n):
+    if n == 0 or n == 1:  # Warunek zakończenia rekurencji dla n = 0 lub n = 1
+        return 1
+    else:
+        return n * silnia(n - 1)
+
+# Przykład użycia:
+liczba = 5
+wynik = silnia(liczba)
+print(wynik)  # Wyświetli 120
+
