@@ -1,7 +1,7 @@
 from datetime import date
 
 class Mieszkanie:
-    def __init__(self, miasto, ulica, numer, metraz, pokoje, cena, rok_budowy, pietro):
+    def __init__(self, miasto, ulica, numer, metraż, pokoje, cena, rok_budowy, pietro):
         self.miasto = miasto
         self.ulica = ulica
         self.numer = numer
